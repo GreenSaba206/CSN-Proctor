@@ -1,0 +1,71 @@
+﻿/* reset styles */
+html {
+   font-size: 24px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ul, fieldset, form, input, 
+label, legend, textarea {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+ul {
+   list-style-type: none;
+}
+
+/* global styles */
+h1, h2, p {
+   color: black;
+   font-family: "Noto Sans", sans-serif, Arial, Helvetica;
+}
+input, textarea, select {
+   color: black;
+   background-color: #a9b1b4;
+   font-family: "Noto Sans", sans-serif, Arial, Helvetica;
+}
+
+/* main content */
+article.display h1 {
+   text-align: center;
+}
+article.display h2 {
+   text-align: center;
+   color: white;
+}
+article.display p {
+   text-align: center;
+}
+article.display fieldset {
+   text-align: center;
+}
+
+/* fieldset styles */
+fieldset {
+   margin: 0 0 1em 1em;
+}
+.submitbutton {
+   color: white;
+   text-align: center;
+   margin: 1em 0;
+   font-size: 1em;
+}
+
+/* field styles */
+input, select, textarea{
+   border: none;
+   padding: 0.2em;
+   font-size: 1em;
+   /* font-family: "Noto Sans", sans-serif, Arial, Helvetica; */
+}
+
+/* form styles */
+form {
+   margin: 0 auto;
+   padding: 0%;
+   max-width: 600px;
+}
