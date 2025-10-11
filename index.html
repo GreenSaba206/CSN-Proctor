@@ -1,13 +1,32 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Index.html</title>
-      <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add User</title>
+   <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
       <script src="modernizr.custom.40753.js"></script><!--This is for auto resizing windows, should be applicable to mobile viewing as well?-->
       <link rel="stylesheet" href="styles.css"><!--This is for various effects such as bg and/or text color etc.-->
-   </head>
-   <body>
-<!--page information goes here-->
-   </body>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  
+    <img src="csnlogo.jpg" alt="Logo">
+  
+  </header>
+
+  <div class="container">
+    <h1>Welcome
+    <form method="post" action="">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="submit" value="Login">
+    </form>
+    <a href="index.php">Student Registration</a> |<!--change to propper link --> 
+    <a href="index.php">Teacher Registration</a> 
+  </div>
+
+</body>
 </html>
