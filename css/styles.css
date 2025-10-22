@@ -143,3 +143,18 @@ td a {
   padding: 0.2em 0.6em;
   overflow: hidden;
 }
+
+/* label styles */
+label {
+  color: black;
+  font-size: 1.6em;
+}
+.locationinput label {
+  margin: 0.7em 0;
+  display: block;
+  position: relative;
+}
+select {
+  color: white;
+  background-color: #434647;
+}
