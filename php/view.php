@@ -1,7 +1,7 @@
 
 <?php
 //php -S localhost:8000 starts server ar root folder cd C:\Users\babra\OneDrive\Desktop\CSN-Proctor-main\CSN-Proctor-main
-//http://localhost:8000/AccountRegister.html
+//http://localhost:8000/StudentRegister.html
 // http://localhost:8000/php/view.php
 //extension=pdo_sqlite
 //extension=sqlite3
