@@ -18,6 +18,8 @@ ul {
    list-style-type: none;
 }
 
+/* global styles */
+
 /* body and container */
 body {
   font-family: Arial, sans-serif;
@@ -27,27 +29,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-p {
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  line-height: 1.4em;
-  color: black;
-}
-
-/* Header styling */
-header {
-  width: 100%;
-  background-color: #ffffff; 
-  padding: 10px 0;
-  text-align: center;
-}
-
-header img {
-  height: 80px; /* adjust size of your logo */
-  display: block;
-  margin: 0 auto;
-}
-
 .container {
   background: rgb(255, 255, 255);
   padding: 30px 40px;
@@ -57,6 +38,42 @@ header img {
   text-align: center;
   margin-top: 100px; /* space between header and form */
 }
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 3em;
+}
+p {
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: black;
+}
+a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header section */
+header {
+  width: 100%;
+  background-color: #ffffff; 
+  padding: 10px 0;
+  text-align: center;
+}
+header img {
+  height: 80px; /* adjust size of your logo */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Calendar Section */
 .calendar {
   background: rgb(255, 255, 255);
   padding: 30px 40px;
@@ -73,14 +90,13 @@ header img {
   box-shadow: 0 4px 12px rgba(46, 45, 45, 0.1);
   width: 350px;
   text-align: center;
-  margin-top: 50px; /* space between header and form */
-}
-h1 {
-  margin-bottom: 20px;
-  color: #333;
-  font-size: 3em;
+  margin-top: 100px; /* space between header and form */
 }
 
+
+/* fieldset styles */
+
+/* field styles */
 input[type="text"],
 input[type="email"] {
   width: 100%;
@@ -90,7 +106,6 @@ input[type="email"] {
   border-radius: 6px;
   font-size: 14px;
 }
-
 input[type="submit"] {
   background: #007bff;
   color: white;
@@ -101,21 +116,8 @@ input[type="submit"] {
   font-size: 15px;
   transition: background 0.3s ease;
 }
-
 input[type="submit"]:hover {
   background: #0056b3;
-}
-
-a {
-  display: inline-block;
-  margin-top: 15px;
-  text-decoration: none;
-  color: #007bff;
-  font-size: 14px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* table styles */
