@@ -1,11 +1,15 @@
 
 <?php
-//php -S localhost:8000 starts server ar root folder cd C:\Users\babra\OneDrive\Desktop\CSN-Proctor-main\CSN-Proctor-main
+//download php then place in SYSTEM PATH
+//edit system environment variables to include path to php folder (Search for windows or control panel. )
+//in php folder locate php.ini-production and copy then rename copy to php.ini
+//extension=pdo_sqlite turned on (located in php.ini)
+//extension=sqlite3 turned on (located in php.ini)
+
+//run command in terminal php -S localhost:8000 at root folder (for me)cd C:\Users\babra\OneDrive\Desktop\CSN-Proctor-main\CSN-Proctor-main
 //http://localhost:8000/StudentRegister.html
+//fill form and submit
 // http://localhost:8000/php/view.php
-//extension=pdo_sqlite
-//extension=sqlite3
-// Connect to database
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -40,3 +44,4 @@ try {
 } catch (PDOException $e) {
     echo "Database error: " . htmlspecialchars($e->getMessage());
 }
+
