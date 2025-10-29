@@ -19,12 +19,14 @@
         </header>
         <div class="container">
             <h1>Sign Up</h1>
-            <form method="post" action="/register/account"> <!-- setting up data for later use ig ig --> 
+            <form method="post" action="php/register.php">
                 <input type="text" name="first_name" placeholder="First Name" required>
                 <input type="text" name="last_name" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email Address" required> <!-- @student.csn.edu or @csn.edu-->
+                <input type="text" name="student_id" placeholder="NSHE ID" required>
+                <input type="email" name="email" placeholder="Email Address" required> <!-- @student.csn.edu -->
                 <input type="text" name="password" placeholder="Password" required>
-                <input type="submit" value="Submit" formaction="index.html">
+                <input type="submit" value="Submit">
+                <!--<input type="submit" value="Submit" formaction="index.html">-->
             </form>
         </div>
     </body>
