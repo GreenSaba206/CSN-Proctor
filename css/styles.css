@@ -199,42 +199,57 @@ td a {
   Calendar 
   ========================================================================== */
 .calendar {
-  background: rgb(255, 255, 255);
-  padding: 30px 40px;
+  background: #fff;
+  padding: 2%;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 1000px;
+  width: 90%;              /* was 1000px */
+  max-width: 1200px;       /* optional, prevents it from getting too large */
   text-align: center;
-  margin-top: 100px; /* space between header and form */
+  margin-top: 50px;
+  overflow-x: auto;        /* allows horizontal scroll if needed */
 }
+
+table {
+  width: 100%;             /* makes table fill parent container */
+  border-collapse: collapse;
+  font-size: 1.5vw;        /* scales text with screen size */
+  color: black;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em;
+  height: 8vw;             /* scales cell height */
+  width: 14.28%;           /* 100% / 7 days = equal width columns */
+  overflow: hidden;
+  vertical-align: top;
+}
+
+
 
 .calendardates{
   background: rgb(223, 223, 223);
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: bold;
   width: 1000px;
   text-align: center;
-  margin-top: 100px; /* space between header and form */
-}
-
-.calendardates td {
-  background-color: #e0e0e0;
-  font-weight: bold;
-  border: 1px solid #000;
+  margin-top: 100px;
 }
 
 .calendar td{
-  position: relative; /* allows positioning inside cell */
+  position: relative;
   height: 80px;
   width: 80px;
   border: 1px solid #000;
-  vertical-align: top; /* optional if you use absolute positioning */
+  vertical-align: top;
 }
 
 .calendar td span {
   position: absolute;
-  top: 4px;     /* small padding from the top */
-  right: 6px;   /* small padding from the right */
+  top: 4px;
+  right: 6px;
   font-size: 18px;
 }
