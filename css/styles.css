@@ -49,7 +49,12 @@ ul {
 /* ==========================================================================
   Global Styles
   ========================================================================== */
-/* empty */
+select {
+  color: black;
+  background-color: white;
+  border: 1px solid #6d6d6d;
+  font-size: 1em;
+}
 
 /* ==========================================================================
   Typography
@@ -64,7 +69,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #333;
   font-size: 3em;
 }
@@ -78,7 +83,7 @@ p {
 
 a {
   display: inline-block;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   text-decoration: none;
   color: #007bff;
   font-size: 14px;
@@ -136,6 +141,7 @@ input[type="email"] {
   border-radius: 6px;
   font-size: 14px;
 }
+
 input[type="submit"] {
   background: #007bff;
   color: white;
@@ -143,7 +149,7 @@ input[type="submit"] {
   padding: 10px 20px;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   transition: background 0.3s ease;
 }
 input[type="submit"]:hover {
@@ -154,14 +160,27 @@ label {
   color: black;
   font-size: 1.6em;
 }
+
 .locationinput label {
   margin: 0.7em 0;
   display: block;
   position: relative;
 }
-select {
-  color: white;
-  background-color: #434647;
+
+/* Booked exams page */
+.bookedexams label {
+  display: block;
+  margin: 5px 0;
+}
+
+.bookedexams legend {
+ font-size: 2em;
+}
+
+/* Student exam settings page */
+.examsettings label {
+  display: block;
+  margin: 5px 0;
 }
 
 /* ==========================================================================
@@ -179,8 +198,6 @@ th,
 td {
   border: 1px solid black;
   padding: 0.2em 0.6em;
-  height: 80px;
-  width: 100px;
   overflow: hidden;
 }
 
@@ -190,7 +207,7 @@ th {
   font-weight: bold;
 }
 
-td a {
+td a, th a {
   font-size: 1em;
   overflow: hidden;
 }
@@ -198,7 +215,8 @@ td a {
 /* ==========================================================================
   Calendar 
   ========================================================================== */
-.calendar {
+/* The base calendar */
+.calendar {  
   background: rgb(255, 255, 255);
   padding: 30px 40px;
   border-radius: 12px;
@@ -208,33 +226,24 @@ td a {
   margin-top: 100px; /* space between header and form */
 }
 
-.calendardates{
-  background: rgb(223, 223, 223);
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  width: 1000px;
-  text-align: center;
-  margin-top: 100px; /* space between header and form */
-}
-
-.calendardates td {
+/* The calendar days at the top */
+.calendardays th {  
   background-color: #e0e0e0;
   font-weight: bold;
   border: 1px solid #000;
+  vertical-align: bottom; /* optional if you use absolute positioning */
 }
 
-.calendar td{
-  position: relative; /* allows positioning inside cell */
-  height: 80px;
-  width: 80px;
+/* The calendar dates in the body */
+.calendardates td{  
+  position: relative;
+  height: 100px;
+  width: 100px;
   border: 1px solid #000;
-  vertical-align: top; /* optional if you use absolute positioning */
 }
-
-.calendar td span {
+.calendardates td span {
   position: absolute;
   top: 4px;     /* small padding from the top */
   right: 6px;   /* small padding from the right */
-  font-size: 18px;
+  font-size: 30px;
 }

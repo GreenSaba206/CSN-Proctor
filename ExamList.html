@@ -22,17 +22,13 @@
         <div class="calendar">
         <!-- Calendar with exam listings -->
             <table>
-                <tbody>
-                    <tr class="calendardates">
-                        <td>Sunday</td>
-                        <td>Monday</td>
-                        <td>Tuesday</td>
-                        <td>Wednesday</td>
-                        <td>Tuesday</td>
-                        <td>Friday</td>
-                        <td>Saturday</td>
-                    </tr>
+                <thead class="calendardays">
                     <tr>
+                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Tue</th><th>Fri</th><th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody class="calendardates">
+                    <tr>  <!-- 1st row -->
                         <td><span><a href="ExamSettings.html">1</a></span></td>
                         <td><span>2</span></td>
                         <td><span>3</span></td>
@@ -41,7 +37,7 @@
                         <td><span>6</span></td>
                         <td><span>7</span></td>
                     </tr>
-                    <tr>
+                    <tr>  <!-- 2nd row -->
                         <td><span>8</span></td>
                         <td><span>9</span></td>
                         <td><span>10</span></td>
@@ -50,7 +46,7 @@
                         <td><span>13</span></td>
                         <td><span>14</span></td>
                     </tr>
-                    <tr>
+                    <tr>  <!-- 3rd row -->
                         <td><span>15</span></td>
                         <td><span>16</span></td>
                         <td><span>17</span></td>
@@ -59,7 +55,7 @@
                         <td><span>20</span></td>
                         <td><span>21</span></td>
                     </tr>
-                    <tr>
+                    <tr>  <!-- 4th row -->
                         <td><span>22</span></td>
                         <td><span>23</span></td>
                         <td><span>24</span></td>
@@ -68,7 +64,7 @@
                         <td><span>27</span></td>
                         <td><span>28</span></td>
                     </tr>
-                    <tr>
+                    <tr>  <!-- 5th row -->
                         <td><span>29</span></td>
                         <td><span>30</span></td>
                         <td><span>31</span></td>
@@ -77,7 +73,7 @@
                         <td> </td>
                         <td> </td>
                     </tr>
-                    <tr>
+                    <tr>  <!-- 6th row -->
                         <td> </td>
                         <td> </td>
                         <td> </td>
@@ -89,7 +85,9 @@
                 </tbody>
             </table>
 
-            <a href="BookedExams.html">Registered Exams</a> 
+            <footer>
+                <p><a href="BookedExams.html">Registered Exams</a></p> 
+            </footer>
         </div>
 
         <!--
